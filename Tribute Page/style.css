@@ -1,0 +1,88 @@
+html,
+body {
+    height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: #FFFFFF;
+}
+
+#main {
+  background: no-repeat url("https://64.media.tumblr.com/03eab736cc1209c12c609be016a909a2/c712d069f81aa60a-c7/s1280x1920/8e41c94282b00704990487b937f90cc13947a785.jpg"), #060E18;
+  background-size: 100% auto;
+}
+
+#main .title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40rem;
+}
+
+#main .title-container #title {
+  margin: 4.5rem 0 0 0;
+  font-family: 'Lexend Peta', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#main .title-container p {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+#main #tribute-info {
+  padding: 5rem 4rem;
+}
+
+#main #tribute-info div {
+  padding-bottom: 2.5rem;
+}
+
+#main #tribute-info h4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#main #tribute-info p, footer p {
+  font-weight: 100;
+  font-size: 1.6rem;
+}
+
+#main #tribute-info b, footer b {
+  font-weight: 500;
+}
+
+#main #tribute-info #tribute-link {
+  color: #FFFFFF;
+  font-weight: 300;
+}
+
+#main #img-div figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#main #img-div #image {
+  max-width: 25%;
+  height: auto;
+}
+
+#main #img-div figcaption {
+  margin-top: 1rem;
+  font-size: 2.4rem;
+}
+
+#main #img-div .logo {
+  max-width: 6rem;
+}
+
+footer {
+  background: #060E18;
+  padding: 4rem 4rem;
+}
