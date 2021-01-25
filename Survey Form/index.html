@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FCC: Survey Form</title>
+    
+<!--     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+  
+  <body>
+    <div id="container">
+      <div class="logo-container">
+        <header>
+          <a href="https://br.freepik.com/vetores/logotipo" target="_blank">
+            <img src="img/travel.svg" alt="Logo by freepik">
+          </a>
+        </header>
+      </div>
+      <main>
+        <div class="title-container">
+          <h1 id="title">FEEDBACK</h1>
+          <p id="description">And be part of <br>The Company's world</p>
+        </div>
+
+        <form id="survey-form">
+          <fieldset id="data">
+
+            <div class="input-block">
+              <input name="name" id="name" type="text" placeholder="Name" required>
+            </div>
+
+            <div class="input-block">
+              <input name="email" id="email" type="email" placeholder="E-mail" required>
+            </div>
+
+            <div class="age-role-container">
+              <div class="input-block">
+                <input name="number" id="number" type="number" min="16" max="100" placeholder="Age">
+              </div>
+
+              <div class="select-block">
+                <select name="role" id="role">
+                  <option value="">Select your role</option>
+                  <option value="ceo">CEO</option>
+                  <option value="engineer">Engineer</option>
+                  <option value="marketeer">Marketeer</option>
+                  <option value="designer">Designer</option>
+                  <option value="researcher">Researcher</option>
+                  <option value="hr">HR</option>
+                </select>   
+              </div>
+            </div>
+              
+            <div class="select-block">
+              <select name="feature" id="dropdown">
+                <option value="">What is your favorite feature of The Company?</option>
+                <option value="weather-consulting">Weather consulting</option>
+                <option value="company-comparison">Company comparison</option>
+                <option value="table-price">Table price</option>
+                <option value="journey-details">Journey details</option>
+              </select>
+            </div>
+
+          </fieldset>
+
+          <fieldset id="qualitative-feedback">
+
+            <div class="checkbox-block">
+              <p><b>What would you like to see improved?</b> (Check all that apply)</p>
+              
+              <div class="checkbox-container">  
+                <input type="checkbox" name="group-trips" id="group-trips" value="group-trips" checked>
+                <label for="group-trips">Group trips</label>
+              </div>
+              
+              <div class="checkbox-container">  
+                <input type="checkbox" name="transp-types" id="transp-types" value="transp-types">
+                <label for="transp-types">More transportation types</label>
+              </div>
+                
+              <div class="checkbox-container">
+                <input type="checkbox" name="tips" id="tips" value="tips">
+                <label for="tips">Travel tips</label>
+              </div>
+                
+              <div class="checkbox-container">
+                <input type="checkbox" name="hotel-booking" id="hotel-booking" value="hotel-booking">
+                <label for="hotel-booking">Hotel-booking</label>
+              </div>
+                
+              <div class="checkbox-container">
+                <input type="checkbox" name="transp-comp" id="transp-comp" value="transp-comp">
+                <label for="transp-comp">More transport companies</label>
+              </div>
+            </div>
+
+            <div class="radio-block">
+              <p><b>Would you recomend The Company to a friend?</b></p>
+
+              <div class="radio-container">
+                <input type="radio" name="recomendation" id="definitely" value="definitely" checked>
+                <label for="definitely">Definitely</label>
+              </div>
+
+              <div class="radio-container">
+                <input type="radio" name="recomendation" id="maybe" value="maybe">
+                <label for="maybe">Maybe</label>
+              </div>
+
+              <div class="radio-container">
+                <input type="radio" name="recomendation" id="not-sure" value="not-sure">
+                <label for="not-sure">Not sure</label>   
+              </div>
+            </div>
+
+            <div class="textarea-block">
+              <p><b>Any comments or suggestions?</b></p>
+
+              <textarea id="textarea" name="textarea" rows="4" placeholder="Enter your comment here" maxlength="350"></textarea>
+
+            </div>
+
+            <div class="submit-button">
+              <button id="submit" type="submit" form="survey-form">Submit</button> 
+            </div>
+          </fieldset>
+        </form>
+
+      </main>
+    </div>
+  </body
+</html>

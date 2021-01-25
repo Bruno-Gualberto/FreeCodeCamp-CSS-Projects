@@ -1,0 +1,361 @@
+:root {
+    font-size: 100%;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  } 
+  
+  html {
+    background: url("https://64.media.tumblr.com/0bea651b9cdfda8e440c1fb8707864ce/7830450e43ccb015-a2/s1280x1920/c1464f901356d09a6f23bfa4fa749b469859fcd0.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  body, 
+  textarea, 
+  input, 
+  select, 
+  button {
+    font-family: Rubik, sans-serif;
+    font-weight: 300;
+  }
+  
+  select, 
+  input[type="radio"],
+  input[type="checkbox"],
+  input+label,
+  #submit {
+    cursor: pointer;
+  }
+  
+  body #container {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .logo-container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo-container header {
+    margin: 2.6rem 4rem 3rem;
+    max-width: 225px;
+  }
+  
+  .logo-container header a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .logo-container header img {
+    width: 90%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body main {
+    width: 100%;
+  }
+  
+  main .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 4rem;
+  }
+  
+  main .title-container #title {
+    font-size: 1.25rem;
+    color: #FE6659;
+    font-weight: 500;
+    letter-spacing: 2.33px;
+    margin: 0;
+  }
+  
+  main .title-container #description {
+    font-size: 1.75rem;
+    color: #0099A4;
+    font-weight: 500;
+    margin-top: .15rem;
+  }
+  
+  body main fieldset {
+    border: none;
+    padding: 0 1rem;
+  }
+  
+  .input-block input, 
+  .select-block select {
+    height: 2.75rem;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: .5rem .2rem .5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: .4rem;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 22px 0 rgba(0,0,0,0.11);
+    color: #6A6A6A;
+    background: #FFFFFF;
+    position: relative;
+  }
+  
+  #survey-form #data .select-block select {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  #survey-form #data .input-block input::placeholder {
+    color: #C8C8C8;
+  }
+  
+  #survey-form #data .input-block #name {
+    background: no-repeat left bottom .05rem / contain url("https://64.media.tumblr.com/ed0c0ce81e4261206e833bab75ca485e/90889d4916e92748-00/s250x400/61f807c4d87e88136a278922eb3e927fa33f2e78.png"), #FFFFFF;
+    padding-left: 3rem;
+  }
+  
+  #survey-form #data .input-block #email {
+    background: no-repeat left bottom .05rem / contain url("https://64.media.tumblr.com/1cfc0c56ded8e50be3310bbc1d6a8ade/90889d4916e92748-d1/s250x400/5e8677e1c7367430f7a45c66e3ca199362be0568.png"), #FFFFFF;
+    padding-left: 3rem;
+  }
+  
+  #survey-form #data .age-role-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+   
+  #survey-form #data .age-role-container .input-block,
+  #survey-form #data .age-role-container .select-block {
+    flex-basis: 47.5%;
+  }
+  
+  #survey-form #data .input-block #number {
+    background: no-repeat left / contain url("https://64.media.tumblr.com/5e1d4a0e1c190539d52e332b4b509140/90889d4916e92748-08/s250x400/a1b68129362e369e403ac446e4c41ecd0aa083f8.png"), #FFFFFF;
+    padding-left: 3rem;
+  }
+  
+  input[type="number"]::-webkit-outer-spin-button, 
+  input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      appearance: none;
+      background: center / cover no-repeat url("https://64.media.tumblr.com/224afbf437ceeb8a9b4be823c1384906/c734751dd3296234-0a/s250x400/28e8d650fc07f18081fb24994ea1b72d12a16b23.png");
+      width: 2.75rem;
+      height: 2.75rem;
+      opacity: 1; /* shows Spin Buttons per default (Chrome >= 39) */
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      cursor: pointer;
+  }
+  
+  /* Override browser form filling */
+  /* input:-webkit-autofill {
+      background: black;
+      color: red;
+  } */
+  
+  #survey-form #data .select-block #role {
+      background: no-repeat left .2rem bottom .05rem / contain url("https://64.media.tumblr.com/fb574d4070a596070e07e8d8c9bc629a/90889d4916e92748-30/s250x400/93454361d86f5da82f8937f687373087b5b80fcf.png"), no-repeat right / contain url("https://64.media.tumblr.com/9790993b45cbe00a942d4b8d410ff94c/91c2f0eb6acacc28-af/s250x400/b8a74e0cf7fab3b33658aefee6d79ab6a32a5023.png"), #FFFFFF;
+    padding: 0 2.8rem 0 3.5rem;
+    text-overflow: ellipsis;
+  }
+  
+  #survey-form #data .select-block #dropdown {
+    background: no-repeat right / contain url("https://64.media.tumblr.com/9790993b45cbe00a942d4b8d410ff94c/91c2f0eb6acacc28-af/s250x400/b8a74e0cf7fab3b33658aefee6d79ab6a32a5023.png"), #FFFFFF;
+    padding-right: 2.8rem;
+    text-overflow: ellipsis;
+  }
+  
+  #survey-form #qualitative-feedback {
+    color: #6A6A6A;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+  
+  #survey-form #qualitative-feedback p {
+    margin: 1.75rem 0 1rem;
+  }
+  
+  #survey-form #qualitative-feedback b {
+    font-weight: 500;
+  }
+  
+  #survey-form #qualitative-feedback input:checked + label {
+    font-weight: 400;
+  }
+  
+  #survey-form #qualitative-feedback .checkbox-container,
+  #survey-form #qualitative-feedback .radio-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: .4rem;
+  }
+  
+  #survey-form #qualitative-feedback .checkbox-container input[type="checkbox"],
+  #survey-form #qualitative-feedback .radio-container input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  #survey-form #qualitative-feedback .checkbox-container input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 1px solid #0298A3;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.5);
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #survey-form #qualitative-feedback .checkbox-container input[type="checkbox"]:checked {
+    background: center / 80% no-repeat url("https://64.media.tumblr.com/037216bb09764332e7be085e814bb31a/a56968f02d8e0160-dc/s75x75_c1/770777970a170ec49cfab231e1ac76936e0e505f.png"), rgba(2,152,163,0.2);
+  }
+  
+  #survey-form #qualitative-feedback .radio-container input[type="radio"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: solid 1px #0298A3;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #survey-form #qualitative-feedback .radio-container input[type="radio"]:checked {
+    background: center / 80% no-repeat url("https://64.media.tumblr.com/8ffc4c8456e68b55f6f6af61ec7c415a/6240e1c041247d4b-dc/s75x75_c1/9484bac00b1ba1d17472f4ca11db727a255dabbe.png"), rgba(2,152,163,0.2);
+  }
+  
+  #survey-form #qualitative-feedback .checkbox-container label,
+  #survey-form #qualitative-feedback .radio-container label {
+    margin-left: .3rem;
+  }
+  
+  #survey-form #qualitative-feedback #textarea {
+    width: 100%;
+    padding: .75rem 1rem;
+    font-size: 1.1rem;
+    font-family: Rubik, sans-serif;
+    color: #6A6A6A;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 5px 5px 22px 0 rgba(0, 0, 0, 0.11);
+    background: #FFFFFF;
+  }
+  
+  #survey-form #qualitative-feedback #textarea::placeholder {
+    color: #C8C8C8;
+  }
+  
+  #survey-form #qualitative-feedback .submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.75rem 0;
+  }
+  
+  #survey-form #qualitative-feedback .submit-button #submit {
+    width: 100%;
+    height: 3.5rem;
+    background: #FE6659;
+    border: none;
+    outline: none;
+    border-radius: .4rem;
+    box-shadow: 5px 5px 22px 0 rgba(0, 0, 0, 0.11);
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    transition: background-color .4s;
+  }
+  
+  #survey-form #qualitative-feedback .submit-button #submit:hover {
+    background: #FF7B70;
+  }
+  
+  #survey-form #qualitative-feedback .submit-button #submit:active {
+    width: 99.5%;
+    height: 3.45rem;
+    font-size: 1.35rem;
+    background: #e0655a;
+    box-shadow: inset 5px 5px 22px 0 rgba(0, 0, 0, 0.11);
+  }
+  
+  @media (min-width: 700px) {
+    body main fieldset {
+      padding: 0 20vw;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    :root {
+      font-size: 120%;
+    }
+    
+    body main fieldset {
+      padding: 0 30vw;
+    }
+    
+    .input-block input, 
+    .select-block select {
+      height: 3rem;
+      font-size: 20px;
+    }
+    
+    #survey-form #data .select-block #role,
+    #survey-form #data .select-block #dropdown {
+      padding-right: 3.1rem;
+    }
+    
+    input[type="number"]::-webkit-outer-spin-button, 
+    input[type="number"]::-webkit-inner-spin-button {
+      width: 3rem;
+      height: 3rem;
+    }
+    
+    #survey-form #qualitative-feedback .checkbox-container input[type="checkbox"]:checked {
+      background: center / 18px 18px no-repeat url("https://64.media.tumblr.com/037216bb09764332e7be085e814bb31a/a56968f02d8e0160-dc/s75x75_c1/770777970a170ec49cfab231e1ac76936e0e505f.png"), rgba(2,152,163,0.2);
+  }
+    
+    #survey-form #qualitative-feedback .radio-container input[type="radio"]:checked {
+      background: 2px 2px / 80% no-repeat url("https://64.media.tumblr.com/8ffc4c8456e68b55f6f6af61ec7c415a/6240e1c041247d4b-dc/s75x75_c1/9484bac00b1ba1d17472f4ca11db727a255dabbe.png"), rgba(2,152,163,0.2);
+  }
+    
+    #survey-form #qualitative-feedback,
+    #survey-form #qualitative-feedback #textarea {
+      font-size: 20px;
+    }
+    
+    #survey-form #qualitative-feedback .submit-button #submit {
+      height: 4.1rem;
+      font-size: 32px;
+    }
+    
+    #survey-form #qualitative-feedback .submit-button #submit:active {
+      width: 99.5%;
+      height: 4.05rem;
+      font-size: 31px;
+      background: #e0655a;
+      box-shadow: inset 5px 5px 22px 0 rgba(0, 0, 0, 0.11);
+    }
+  }  
